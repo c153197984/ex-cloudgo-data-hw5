@@ -86,7 +86,7 @@ ORM不只是实现一个自动DAO。 DAO只是一个或多个SQL语句对特定�
 
 GO的`xorm`库将数据库的基本操作（增删查改）封装成了一个`engine`对象，操作数据不用编写DAO服务，全藉由`engine`对象所提供的方法来完成。不过由于`xorm`相当是对SQL的进一步封装，事实上其效率是不如SQL的。
     
-    使用ab测试性能。
+   使用ab测试性能。
    
    测试语句为`ab -n 10000 -c 100 " $ ab -n 10000 -c 100 http://localhost:8080/service/user?uid="`。测试结果如下：
 
